@@ -1,0 +1,219 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css">
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+    <!-- Title -->
+    <title>Landkit</title>
+
+    <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+      heap.load("1281761523");
+    </script>
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+    <script type="text/javascript">
+      function SubForm (){
+      			$.ajax({
+      				url:"https://api.apispreadsheets.com/data/6D3V7OEXrnOfzzJC/",
+      				type:"post",
+      				data:$("#myForm").serializeArray(),
+      				success: function(){
+      					alert("Вашу заявку успішно відправлено")
+      				},
+      				error: function(){
+      					alert("Ой щось пішло не так :(")
+      				}
+      			});
+      		}
+    </script>
+  </head>
+  <body>
+
+    <!-- WELCOME -->
+    <section class="py-8 py-md-2 border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Headin -->
+            <h1 class="display-1 fw-bold" data-aos="fade-up" data-aos-delay="50" style="font-size: 3em;font-family: system-ui;">
+              <!-- Banking for Startups. -->
+              <img src="assets/img/unicorn.png" style="
+    width: 36px;
+">
+              Finicorn — шлях спортсменів до фінансової незалежності
+            </h1>
+
+            <!-- Text -->
+            <!-- <p class="lead text-muted mb-6" data-aos="fade-up" data-aos-delay="100" style="font-family: system-ui;"> -->
+              <!-- Фінансова освіта, створення інвестиційного портфеля, професійне керування активами -->
+              <!-- We created a simple, safe, and easy-to-use platform for managing the complex banking of startups. -->
+            <!-- </p> -->
+
+            <!-- Button -->
+            <!-- <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
+              <a class="btn btn-primary shadow lift" href="#!">
+                Open an account <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </p> -->
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row" style="margin-top: 120px;">
+                  <div class="col-12 col-md-4" style="height: 240px;">
+                    <div class="row">
+
+                      <div class="col col-md-12 ms-n5 ms-md-0">
+
+                        <div class="card-solution">
+                          <!-- Text -->
+                          <p class=" mb-6 mb-md-0" style="font-family: system-ui; padding-top: 35px;">
+                            Фінансова освіта для спортсменів лекції, курси
+
+                            <ul class="" style="font-family: system-ui; margin-top: 15px;">
+                              <li>Лекції</li>
+                              <li>Курси</li>
+                            </ul>
+
+                          </p>
+                        </div>
+
+
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="col-12 col-md-4" style="height: 240px;">
+                    <div class="row">
+
+                      <div class="col col-md-12 ms-n5 ms-md-0">
+
+                        <div class="card-solution">
+
+                          <!-- Text -->
+                          <p class=" mb-6 mb-md-0" style="font-family: system-ui; padding-top: 35px;">
+                            Створення інвестиційного портфеля під ваші цілі
+
+                            <ul class="" style="font-family: system-ui; margin-top: 15px;">
+                              <li>Фінансова подушка на період травм</li>
+                              <li>Збереження грошей за час спортивної кар’єри</li>
+                              <li>Підбір інвестиційних інструментів під ваші цілі</li>
+                            </ul>
+
+                          </p>
+
+                        </div>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="col-12 col-md-4" style="height: 240px;">
+                    <div class="row">
+
+                      <div class="col col-md-12 ms-n5 ms-md-0">
+
+                        <div class="card-solution">
+
+                          <!-- Text -->
+                          <p class=" mb-6 mb-md-0" style="font-family: system-ui; padding-top: 35px;">
+                            Професійне керування активами від фінансових радників
+                          </p>
+                        </div>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+
+                </div>
+
+
+                <div class="card" style="margin-top: 50px;">
+                              <div class="card-body">
+
+                                <form id="myForm">
+                                  <div class="form-group form-floating">
+                                    <!-- <input type="text" class="form-control" id="cardName" placeholder="Name"> -->
+                                    <select class="form-control" name="goal">
+
+                                      <option value="Збільшити рівень фінансової грамотності" selected="selected">Збільшити рівень фінансової грамотності</option>
+                                      <option value="Створення інвестиційного портфеля">Створення інвестиційного портфеля</option>
+                                      <option value="Професійне керування активами">Професійне керування активами</option>
+
+                                    </select>
+
+                                    <label for="cardName" style="font-family: system-ui;">Ваша ціль</label>
+                                  </div>
+
+
+                                  <div class="form-group form-floating">
+                                    <input type="text" class="form-control" id="cardPassword" name="phone_number" value="+380">
+                                    <label for="cardPassword" style="font-family: system-ui;">Номер телефону</label>
+                                  </div>
+
+                                  <div class="form-group form-floating">
+                                    <!-- <input type="email" class="form-control" id="cardEmail" placeholder="Email"> -->
+                                    <!-- <label for="cardEmail">Email</label> -->
+                                    <!-- <label for="customRange1" class="form-label range-label" style="font-family: system-ui;">Скільки ви готові заплатити?</label> -->
+                                    <label for="cardName" style="font-family: system-ui; position: relative; color: #000;">Скільки ви готові оплачувати за місяць?</label>
+
+                                    <div class="slider">
+                                      <input type="text" class="js-range-slider" name="how_to_pay" id="">
+
+                                    </div>
+
+                                  </div>
+
+                                  <script type="text/javascript">
+                                    // $("#priceSlider").ionRangeSlider({
+                                    //   type: "double",
+                                    //   grid: true,
+                                    //   min: 0,
+                                    //   max: 1000,
+                                    //   from: 200,
+                                    //   to: 800,
+                                    //   prefix: "£"
+                                    // });
+
+                                    $('.js-range-slider').ionRangeSlider({
+                                      type: "single",
+                                      min: 0,
+                                      max: 50,
+                                      from: 0,
+                                      grid: true,
+                                      prefix: '$'
+                                    });
+                                  </script>
+
+                                </form>
+
+                                <button onclick="SubForm()" class="btn w-100 btn-success lift" style="font-family: system-ui;">
+                                  Відправити заявку
+                                </button>
+
+                              </div>
+                            </div>
+
+
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+</body>
+</html>
