@@ -24,7 +24,7 @@
     <script type="text/javascript">
       function SubForm (){
       			$.ajax({
-      				url:"https://api.apispreadsheets.com/data/6D3V7OEXrnOfzzJC/",
+      				url:"https://api.apispreadsheets.com/data/nHKAKBSsxfRidgNr/",
       				type:"post",
       				data:$("#myForm").serializeArray(),
       				success: function(){
@@ -79,11 +79,10 @@
                         <div class="card-solution">
                           <!-- Text -->
                           <p class=" mb-6 mb-md-0" style="font-family: system-ui; padding-top: 35px;">
-                            Фінансова освіта для спортсменів лекції, курси
+                            Фінансова освіта
 
                             <ul class="" style="font-family: system-ui; margin-top: 15px;">
-                              <li>Лекції</li>
-                              <li>Курси</li>
+                              <li>ви дізнаєтеся як правильно керувати грошима і створювати активи </li>
                             </ul>
 
                           </p>
@@ -104,7 +103,7 @@
 
                           <!-- Text -->
                           <p class=" mb-6 mb-md-0" style="font-family: system-ui; padding-top: 35px;">
-                            Створення інвестиційного портфеля під ваші цілі
+                            Створення індивідуального інвестиційного портфеля
 
                             <ul class="" style="font-family: system-ui; margin-top: 15px;">
                               <li>Фінансова подушка на період травм</li>
@@ -129,7 +128,12 @@
 
                           <!-- Text -->
                           <p class=" mb-6 mb-md-0" style="font-family: system-ui; padding-top: 35px;">
-                            Професійне керування активами від фінансових радників
+                            Керування активами
+
+                            <ul class="" style="font-family: system-ui; margin-top: 15px;">
+                              <li>Передача грошей в управління професіональним керуючим активами для отримання пасивного доходу та збільшення капіталу</li>
+                            </ul>
+
                           </p>
                         </div>
 
@@ -145,6 +149,12 @@
                               <div class="card-body">
 
                                 <form id="myForm">
+
+                                  <div class="form-group form-floating">
+                                    <input type="text" class="form-control" id="cardPassword" name="first_name" value="">
+                                    <label for="cardPassword" style="font-family: system-ui;">Ваше ім'я</label>
+                                  </div>
+
                                   <div class="form-group form-floating">
                                     <!-- <input type="text" class="form-control" id="cardName" placeholder="Name"> -->
                                     <select class="form-control" name="goal">
@@ -157,6 +167,8 @@
 
                                     <label for="cardName" style="font-family: system-ui;">Ваша ціль</label>
                                   </div>
+
+
 
 
                                   <div class="form-group form-floating">
