@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -18860,7 +18855,7 @@ a.card:hover {
     width: 1.875rem;
 }
 .avatar:after {
-    background-image: url(../img/masks/avatar-status.svg), url(../img/masks/avatar-group.svg), url(../img/masks/avatar-group-hover.svg), url(../img/masks/avatar-group-hover-last.svg);
+    /* background-image: url(../img/masks/avatar-status.svg), url(../img/masks/avatar-group.svg), url(../img/masks/avatar-group-hover.svg), url(../img/masks/avatar-group-hover-last.svg); */
     content: "";
     height: 0;
     position: absolute;
@@ -18893,8 +18888,8 @@ a.card:hover {
 }
 .avatar-offline .avatar-img,
 .avatar-online .avatar-img {
-    -webkit-mask-image: url(../img/masks/avatar-status.svg);
-    mask-image: url(../img/masks/avatar-status.svg);
+    /* -webkit-mask-image: url(../img/masks/avatar-status.svg); */
+    /* mask-image: url(../img/masks/avatar-status.svg); */
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
@@ -20764,5 +20759,3 @@ a.navbar-brand {
 .contacts > a, .contacts {
   color: #ccffff;
 }
-
-/*# sourceMappingURL=theme.bundle.css.map*/
