@@ -14,28 +14,33 @@
       <!--jQuery-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <!--Plugin JavaScript file-->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
-         <script type="text/javascript">
-           function SubForm (){
-           			$.ajax({
-           				url:"https://api.apispreadsheets.com/data/nHKAKBSsxfRidgNr/",
-           				type:"post",
-           				data:$("#myForm").serializeArray(),
-           				success: function(){
-           					alert("Вашу заявку успішно відправлено")
-           				},
-           				error: function(){
-           					alert("Ой щось пішло не так :(")
-           				}
-           			});
-           		}
-         </script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+     <script type="text/javascript">
+       function SubForm (){
+       			$.ajax({
+       				url:"https://api.apispreadsheets.com/data/CJgbvOtxX2HK8TWR/",
+       				type:"post",
+       				data: $("#consultForm").serializeArray(),
+       				success: function(){
+                $('#btnConsult').hide();
+                $('#consultForm').hide();
+
+                $('#successText').show();
+
+       				},
+       				error: function(){
+       					alert("Ой щось пішло не так :(")
+       				}
+       			});
+       		}
+     </script>
    </head>
    <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
          <div class="container-fluid">
             <!-- Brand -->
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="http://finicorn.co">
             <img src="./assets/img/unicorn.png" class="navbar-brand-img" alt="...">
             FiniCorn
             </a>
@@ -483,10 +488,11 @@
                                        <img class="avatar-img rounded-circle" src="assets/img/team-1.jpeg" alt="...">
                                     </div>
                                  </div>
-                                 <div class="col-6 ms-n5">
+                                 <div class="col-8 ms-n5">
                                     <!-- Heading -->
                                     <p class="mb-0">
                                        Аліна Шух
+                                       <br>
                                        CEO
                                     </p>
                                  </div>
@@ -496,7 +502,7 @@
                                  <div class="col-12">
                                    <p class="mb-0">
                                      <br>
-                                     чемпіонка і рекордсменка світу серед юніорів з легкої атлетики. Практикуючий інвестор, фінансова радниця, лектор по фінансовій грамотності</p>
+                                     Чемпіонка і рекордсменка світу серед юніорів з легкої атлетики. Практикуючий інвестор, фінансова радниця, лектор по фінансовій грамотності</p>
                                  </div>
 
 
@@ -573,7 +579,7 @@
                                    <p class="mb-0">
                                      <br>
 
-                                     підприємець, 6 років досвіду у управлінні продуктовими командами, практикуючий інвестор</p>
+                                     Підприємець, 6 років досвіду у управлінні продуктовими командами, практикуючий інвестор</p>
                                  </div>
 
 
@@ -654,14 +660,17 @@
                                   Безкоштовна фінансова консультація, яка розставить все на свої місця
                                 </p>
 
+
+                                <p id="successText" class="hidden">Заявка успішно відправлена, біжимо дзвонити вам негайно!</p>
+
                                 <!-- Form -->
-                                <form>
+                                <form id="consultForm">
                                   <div class="row">
                                     <div class="col-12 col-md-12">
 
                                       <!-- First name -->
                                       <div class="form-floating">
-                                        <input type="text" class="form-control form-control-flush" id="registrationFirstName" placeholder="First name">
+                                        <input type="text" class="form-control form-control-flush" name="first_name" id="registrationFirstName" placeholder="First name">
                                         <label for="registrationFirstName">Ім'я</label>
                                       </div>
 
@@ -671,7 +680,7 @@
 
                                       <!-- First name -->
                                       <div class="form-floating">
-                                        <input type="text" class="form-control form-control-flush" id="registrationFirstName" placeholder="First name">
+                                        <input type="text" class="form-control form-control-flush" name="phone_number" id="registrationFirstName" placeholder="First name">
                                         <label for="registrationFirstName">Номер телефону</label>
                                       </div>
 
@@ -679,17 +688,19 @@
 
                                   </div>
 
-                                  <div class="row">
-                                    <div class="col-12">
 
-                                      <!-- Submit -->
-                                      <button class="btn w-100 btn-primary mt-3 lift">
-                                        Запросити консультацію
-                                      </button>
-
-                                    </div>
-                                  </div>
                                 </form>
+
+                                <div class="row" id="btnConsult">
+                                  <div class="col-12">
+
+                                    <!-- Submit -->
+                                    <button onclick="SubForm()"  class="btn w-100 btn-primary mt-3 lift">
+                                      Запросити консультацію
+                                    </button>
+
+                                  </div>
+                                </div>
 
                               </div>
                             </div> <!-- / .row -->
