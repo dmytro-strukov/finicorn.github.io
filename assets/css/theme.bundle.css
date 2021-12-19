@@ -70,7 +70,8 @@ body {
     -webkit-tap-highlight-color: rgba(22, 28, 45, 0);
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
-    font-family: var(--bs-body-font-family);
+    /* font-family: var(--bs-body-font-family); */
+    font-family: system-ui;
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
@@ -20749,6 +20750,10 @@ a.card:hover {
   min-height: 285px;
   padding: 0px 10px;
   box-shadow: 0 0.01rem 0.2rem rgba(22,28,45,.1)!important;
+}
+
+a.navbar-brand {
+  color: #7f3787!important;
 }
 
 /*# sourceMappingURL=theme.bundle.css.map*/
