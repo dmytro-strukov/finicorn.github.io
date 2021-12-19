@@ -418,6 +418,11 @@ progress {
     font-size: 2.6875rem;
     font-weight: 400;
 }
+
+.display-5 {
+  font-size: 1.35rem;
+}
+
 .list-inline,
 .list-unstyled {
     list-style: none;
@@ -20754,6 +20759,10 @@ a.card:hover {
 
 a.navbar-brand {
   color: #7f3787!important;
+}
+
+.contacts > a, .contacts {
+  color: #ccffff;
 }
 
 /*# sourceMappingURL=theme.bundle.css.map*/
